@@ -1,0 +1,6 @@
+PORTABLE_PRETTY_NAME="Findomain Portabled Image"
+PORTABLE_ID=findomain-portabled
+PRETTY_NAME=Findomain
+ID=findomain
+BUILD_ID=rolling
+HOME_URL=https://findomain.app

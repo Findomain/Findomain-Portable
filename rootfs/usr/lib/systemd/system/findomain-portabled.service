@@ -1,0 +1,16 @@
+[Unit]
+Description=Monitor subdomains.
+
+[Service]
+LimitNOFILE=49152
+ExecStart=/usr/bin/findomain -t google.com -u google.txt
+StateDirectory=findomain
+StartLimitBurst=0
+Restart=on-failure
+RestartSec=50min
+KillMode=process
+KillSignal=SIGINT
+
+[Install]
+WantedBy=default.target
+
